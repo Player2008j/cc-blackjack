@@ -1,4 +1,10 @@
--- blackjack.lua — CC:Tweaked single‑player Blackjack
+-- Probeer een monitor te vinden
+local mon = peripheral.find("monitor")
+if mon then
+  mon.setTextScale(0.5) -- kleinere letters zodat er meer op past
+  term.redirect(mon)    -- stuur alle tekst naar de monitor
+end-- blackjack.lua — CC:Tweaked single‑player Blackjack
+  
 -- Terminal game vs. dealer with simple betting and persistent balance.
 -- Drop this file in your computer and run:  blackjack
 -- Made for CC:Tweaked (works in CraftOS terminal / advanced monitors not required).
